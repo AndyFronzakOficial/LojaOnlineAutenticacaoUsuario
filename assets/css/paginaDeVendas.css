@@ -1,0 +1,42 @@
+
+    .fixo {
+        background-color: #212529;
+        padding: 10px;
+        width: 100%;
+        z-index: 6;
+    }
+
+    .fixed {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .nav-link {
+        color: #fff !important;
+    }
+
+    .marquee-container {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .marquee-content {
+        z-index: 6;
+
+        display: inline-block;
+        white-space: nowrap;
+        animation: marquee 90s linear infinite;
+        /* Ajuste a velocidade e duração conforme necessário */
+    }
+
+    @keyframes marquee {
+        0% {
+            transform: translateX(10%);
+        }
+
+        100% {
+            transform: translateX(-100%);
+        }
+    }
